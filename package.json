@@ -1,0 +1,29 @@
+{
+  "name": "compose-js",
+  "description": "Composing Small Javascript Libraries, Homebrew Style",
+  "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
+  "tags": [ "build" ],
+  "version": "0.0.1",
+  "main": "lib/compose.js",
+
+  "engines": {
+    "node": ">= 0.4.x < 0.7.0"
+  },
+  
+  "dependencies": {
+    "getit": "*"
+  },
+
+  "devDependencies": {
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DamonOehlman/compose-js.git"
+  },
+  "bugs": {
+    "url": "http://github.com/DamonOehlman/compose-js/issues"
+  },
+  
+  "contributors": []
+}

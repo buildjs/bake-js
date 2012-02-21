@@ -59,5 +59,9 @@ In summary, the purpose of this project is to increase the re-usability of JS li
 
 If you have any thoughts on this, please feel free to [leave an issue](/DamonOehlman/compose-js/issues/new) for discussion or hit me up on [Twitter](http://twitter.com/DamonOehlman).
 
+## Potential Discussion Points
+
+- Versioning using [semver](http://semver.org/) (via [node-semver](https://github.com/isaacs/node-semver)).  Would require repo tagging etc for it to work well / at all.
+
 
 

@@ -1,1 +1,6 @@
+# dsc: Underscore.js is a utility-belt library for JavaScript that provides support for the usual functional suspects (each, map, reduce, filter...) without extending any core JavaScript objects.
+# url: http://underscorejs.org/
+# src: https://github.com/documentcloud/underscore
+# bug: https://github.com/documentcloud/underscore/issues
+
 github://documentcloud/underscore/underscore.js

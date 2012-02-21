@@ -55,9 +55,9 @@ In the event that the IoC library was composed with another library that uses ev
 
 ## Summary
 
-In summary, the purpose of this project is to increase the re-usability of JS libraries and to make a distinction between building and composing JS libraries and applications. By making this distinction a few things become easier to deal with, including the fact that some libraries may choose to include a compile step during the build process making use of other find languages such as [coffee-script](http://coffeescript.org/) or [roy](http://roy.brianmckenna.org/).
+In summary, the purpose of this project is to increase the re-usability of JS libraries and to make a distinction between building and composing JS libraries and applications. By making this distinction a few things become easier to deal with, including the fact that some libraries may choose to include a compile step during the build process making use of languages such as [coffee-script](http://coffeescript.org/) or [roy](http://roy.brianmckenna.org/).
 
-If you have any thoughts on this, please feel free to leave an issue for discussion or hit me up on [Twitter](http://twitter.com/DamonOehlman).
+If you have any thoughts on this, please feel free to [leave an issue](/DamonOehlman/compose-js/issues/new) for discussion or hit me up on [Twitter](http://twitter.com/DamonOehlman).
 
 
 

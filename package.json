@@ -11,7 +11,11 @@
   },
   
   "dependencies": {
-    "getit": "*"
+    "buffers": "0.1.x",
+    "climate": "0.2.x",
+    "getit": "*",
+    "out": "*",
+    "tar": "0.1.x"
   },
 
   "devDependencies": {

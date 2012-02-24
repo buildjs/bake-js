@@ -11,11 +11,13 @@
   },
   
   "dependencies": {
-    "buffers": "0.1.x",
-    "climate": "0.2.x",
     "getit": "*",
     "out": "*",
-    "tar": "0.1.x"
+    "tar": "0.1.x",
+    "fstream": "0.1.x",
+    "mkdirp": "*",
+    "rimraf": "*",
+    "when": "https://github.com/cujojs/when/tarball/master"
   },
 
   "devDependencies": {

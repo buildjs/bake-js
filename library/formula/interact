@@ -1,0 +1,6 @@
+# dsc: Standardized Mouse and Touch Event Handling using Eve
+# src: https://github.com/DamonOehlman/interact
+# bug: https://github.com/DamonOehlman/interact/issues
+# req: eve
+
+github://DamonOehlman/DamonOehlman/interact.js

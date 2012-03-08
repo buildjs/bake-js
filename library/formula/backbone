@@ -3,6 +3,6 @@
 # url: http://backbonejs.org
 # src: https://github.com/documentcloud/backbone
 # bug: https://github.com/documentcloud/backbone/issues
+# req: underscore
 
-+underscore
-github://documentcloud/backbone/eve.js
+github://documentcloud/backbone/backbone.js

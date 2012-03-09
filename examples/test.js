@@ -1,4 +1,4 @@
-// dep: interact
+// dep: backbone, interact
 
 var myApp = (function() {
     eve.on('interact.pointer.down', function() {

@@ -13,6 +13,7 @@
   "dependencies": {
     "async": "0.1.x",
     "commander": "0.5.x",
+    "debug": "*",
     "fstream": "0.1.x",
     "getit": "*",
     "mkdirp": "*",

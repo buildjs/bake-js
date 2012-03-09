@@ -11,12 +11,12 @@
   },
   
   "dependencies": {
-    "getit": "*",
-    "out": "*",
-    "tar": "0.1.x",
     "fstream": "0.1.x",
+    "getit": "*",
     "mkdirp": "*",
+    "out": "*",
     "rimraf": "*",
+    "tar": "0.1.x",
     "when": "https://github.com/cujojs/when/tarball/master"
   },
 

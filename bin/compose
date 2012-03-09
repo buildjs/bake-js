@@ -1,2 +1,10 @@
 #!/usr/bin/env node
-require('../lib/compose')();
+var program = require('commander');
+
+program
+    .usage('[options] <targetFile> OR <action>')
+    .option('-w, --watch', 'Watch for changes')
+    .option('-o, --out [outputFile]', 'Target output file')
+    .parse(process.argv);
+    
+require('../lib/compose')(program.args, program);

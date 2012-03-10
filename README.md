@@ -1,67 +1,78 @@
 # ComposeJS
 
-## Initial Thoughts
+ComposeJS is a project designed to ease the pain and complexity of creating client-side Javascript applications.
 
-Package management for client-side Javascript is a somewhat broken environment at the moment.  While I'm reasonably happy with some of the work I've done with regards to build tools, tools like [Interleave](/DamonOehlman/interleave) really don't do much to improve the "composability" of smaller JS libraries (such as those found on the [microjs.com](http://microjs.com/) site).
+## Installation
 
-I've been investing more and more into writing smaller, more composable JS libraries but things still just don't feel quite right when it comes to bringing them together in a web application.  
-
-Interleave certainly doesn't solve the problem, and while tools like [Ender](http://ender.no.de) look really promising, requirements on having a client-side JS library published to NPM are less than ideal.  I don't have a problem with publishing them there (although there is some additional pollution of an already difficult to search repository), it's more the fact that some libraries I use __a lot__ (such as [eve](https://github.com/DmitryBaranovskiy/eve)) aren't available through ender.
-
-So at this stage, I'm thinking about writing a very small, simple tool that will take a [homebrew](https://github.com/mxcl/homebrew) like approach to providing recipes for how to install small js libraries.  It will make use of the [getit](/DamonOehlman/getit) library to bring down files from a variety of sources, and cache those files locally for generally speedy build times.
-
-## Structuring for Composability
-
-If you are writing a microjs style library with zero dependencies, then you don't have to do anything special at all.  Just fork this library, and create a formula file for your library and make a pull request.  We'll bring it straight in 99.9% if the time.  
-
-A proposed formula file is shown below, in this case for the eventing library eve:
+To get started with ComposeJS first install the command line tools via npm.  If you don't already have [NodeJS](http://nodejs.org/) installed then you will need to install it to get access to npm.
 
 ```
-# dsc: Tiny event helping JavaScript library.
-# url: http://dmitry.baranovskiy.com/eve/
-# bug: https://github.com/DmitryBaranovskiy/eve/issues
-
-github://DmitryBaranovskiy/eve/eve.js
+npm install -g compose-js
 ```
 
-The formula file is a plain text file with hash comment lines that will be used to populate a simple online directory and search interface for compose-js.
+_Depending on your installation, you may need to run this with the `sudo` command._
 
-### But my library has dependencies
+Once ComposeJS is installed, you will then be able to access the `compose` command.  First thing you will want to do is fetch the current recipes from this github repo by running the `update` command:
 
-Let's face it, if we are all building 0 dependency libraries, then something is wrong and JS really isn't going to get that far.  More than likely you are building on someone else's work and need that library available to do something meaningful.  My thoughts for dealing with this is making two versions of your library available in your source repo.  Firstly, one that includes all the prerequisite libraries in a single `js` file and another that has some flag comments saying which libraries are required when your library is being composed into a larger work.  At this stage I'm thinking a single line comment, immediately following by a plus (+) character would do the job nicely.
+```
+compose update
+```
 
-For instance, here is what I'm thinking with regards to my experimental [IoC](/DamonOehlman/ioc) library:
+If everything has gone to plan, you should see the following output:
+
+```
+retrieving recipes from remote server...
+extracting recipes
+✓ done
+```
+
+While similar to the way the [homebrew](https://github.com/mxcl/homebrew) update command works except compose downloads the latest `.tar.gz` of this repo from github rather than interfacing with git.  General intention is that while the process will be less optimal with regards to bandwidth it is something that should work natively in Windows.
+
+## Composing Applications
+
+Using ComposeJS to generate an application file that is packaged with your application dependencies all into a single file is very simple.
+
+The following is an example of how you might create an application that has dependencies on both [backbone](https://github.com/documentcloud/backbone) and [eve](https://github.com/DmitryBaranovskiy/eve):
 
 ```js
-//+ eve
-//+ underscore
-//+ matchme
+// dep: backbone, eve
 
-(function(glob) {
-    var reAttributes = /^(.*)\[(.*)\]$/,
-        reAttr = /^(\+)?(\w+)\=?(.*)$/;
-    
-    // removed :)
-    
-    var IoC = new ControlScope();
-    
-    (typeof module != "undefined" && module.exports) ? (module.exports = IoC) : (typeof define != "undefined" ? (define("IoC", [], function() { return IoC; })) : (glob.IoC = IoC));
-})(this);
+var myApp = (function() {
+    // your app code here...
+})();
 ```
 
-The `compose` command line tool would interpret these comments and replace them with the appropriate recipe includes (using cached copies where available to speed up the build process).
+Then run `compose` against your target file:
 
-In the event that the IoC library was composed with another library that uses eve (for example) or with an application that required eve the two composition directives (`//+ eve`) would be replaced by a single directive and eve would only be included once.  This is far from being a new or novel technique, but one that has typically not been done well with regards to online repositories and existing JS build solutions.
+```
+compose examples/test.js
+```
 
-## Summary
+When run the dependencies are analysed, child dependencies resolved (e.g. underscore is specified as a dependency in the [backbone recipe](/DamonOehlman/compose-js/blob/master/library/recipes/backbone)) and then all required files are pulled down from their remote sources and pushed to the start of the resulting output.
 
-In summary, the purpose of this project is to increase the re-usability of JS libraries and to make a distinction between building and composing JS libraries and applications. By making this distinction a few things become easier to deal with, including the fact that some libraries may choose to include a compile step during the build process making use of languages such as [coffee-script](http://coffeescript.org/) or [roy](http://roy.brianmckenna.org/).
+By default, compose writes output to `STDOUT` but in most cases you will want to redirect this output to a file.
 
-If you have any thoughts on this, please feel free to [leave an issue](/DamonOehlman/compose-js/issues/new) for discussion or hit me up on [Twitter](http://twitter.com/DamonOehlman).
+## Writing Recipes
 
-## Potential Discussion Points
+Recipes are simply plain text files that are stored in the [library/recipes](/DamonOehlman/compose-js/tree/master/library/recipes) folder in this repository.  For example, the backbone recipe is shown below:
 
-- Versioning using [semver](http://semver.org/) (via [node-semver](https://github.com/isaacs/node-semver)).  Would require repo tagging etc for it to work well / at all.
+```
+# dsc: Give your JS App some Backbone with Models, Views, Collections, and Events
+# tag: mvc, framework
+# url: http://backbonejs.org
+# src: https://github.com/documentcloud/backbone
+# bug: https://github.com/documentcloud/backbone/issues
+# req: underscore
 
+github://documentcloud/backbone/backbone.js
+```
 
+The structure of the file is pretty simple.  Lines starting with the hash character are used to describe attributes of the recipe, of which the most important one to take note of is the `req` attribute.  This attribute is used to specify other recipes that are require to make this library work correctly.  For multiple dependencies use a comma delimited list.
 
+After the attribute definition section comes one or more [getit](https://github.com/DamonOehlman/getit) URL schemes that reference the online location of the file(s) required to make this library work.  In the case of most libraries, this will be a single file, but you can include multiple lines here for multiple files if necessary.
+
+## Companion Tools
+
+ComposeJS aims to make combining multiple JS libraries when building a JS-powered application simple.  It does not, however, aim to simplify the process of creating that library through allowing you to concatenate local files together into a single JS library.  
+
+If you are writing a JS library, then I would highly recommend checking out one of the following tools, or alternatively, use a simple makefile to concatenate your files into a single JS file.  For many people this is the simplest and most effective way.

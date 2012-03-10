@@ -5,6 +5,12 @@
   "tags": [ "build" ],
   "version": "0.0.1",
   "main": "lib/compose.js",
+  
+  "bin": {
+    "compose": "./bin/compose"
+  },
+  
+  "global": "true",
 
   "engines": {
     "node": ">= 0.4.x < 0.7.0"

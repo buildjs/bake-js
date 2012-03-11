@@ -50,3 +50,10 @@ When run the dependencies are analysed, child dependencies resolved (e.g. unders
 By default, bake writes output to ``STDOUT`` but in most cases you will want to redirect this output to a file, e.g.::
 
     bake src/yourapp.js > dist/yourapp.js
+
+More Information
+================
+
+For more information on BakeJS, check out the documentation at:
+
+`http://bakejs.readthedocs.org/`_

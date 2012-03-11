@@ -5,6 +5,8 @@ program
     .usage('[options] <targetFile> OR <action>')
     .option('-w, --watch', 'Watch for changes')
     .option('-o, --out [outputFile]', 'Target output file')
+    .option('--quiet', 'Suppress output')
+    .option('--local', 'Use the local library rather than the remote copy')
     .parse(process.argv);
     
 require('../lib/bake')(program.args, program);

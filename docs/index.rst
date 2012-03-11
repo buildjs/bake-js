@@ -8,6 +8,7 @@ More Information
    
    writing-recipes
    build-vs-bake
+   why-bake
 
 Indices and tables
 ==================

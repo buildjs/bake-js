@@ -6,6 +6,7 @@
    writing-recipes
    build-vs-bake
    why-bake
+   roadmap
 
 Indices and tables
 ==================

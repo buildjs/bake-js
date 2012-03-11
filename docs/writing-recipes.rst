@@ -23,7 +23,7 @@ After the attribute definition section comes one or more `getit <https://github.
 It starts with a fork
 =====================
 
-The first thing you are going to want to do if you are interested in creating your own recipes is fork the `bake-js repository <https://github.com/DamonOehlman/bake-js`.  This will give you your own space to play and create recipes.
+The first thing you are going to want to do if you are interested in creating your own recipes is fork the `bake-js repository <https://github.com/DamonOehlman/bake-js>`_.  This will give you your own space to play and create recipes.
 
 If you are handwriting a recipe, then the first thing to do is to create a file in the ``library/recipes`` folder in your forked repository.  The name of your file should be simply the name of the library you are creating a recipe for (with no file extension).
 
@@ -33,15 +33,13 @@ The first thing I would do is work out the location of the actual JS file that w
 
 https://raw.github.com/madrobby/keymaster/master/keymaster.js
 
-But since BakeJS uses `getit <https://github.com/DamonOehlman/getit>`_ under the hood we can use the custom github url scheme implemented in getit (but feel free to use the standard http url as well if you prefer):
-
-github://madrobby/keymaster/keymaster.js
-
-So, first cut of our keymaster recipe looks like this::
+But since BakeJS uses `getit <https://github.com/DamonOehlman/getit>`_ under the hood we can use the custom github url scheme implemented in getit (but feel free to use the standard http url as well if you prefer). So, first cut of our keymaster recipe looks like this::
 
     github://madrobby/keymaster/keymaster.js
 
-Yep, that's it.  Because keymaster has no dependencies our recipe really only needs to include the location of where it can be found on the web.  In general though, it's good practice to include some extra information about the library that will be displayed in the BakeJS front-end (eventually).  At a minimum I like to include the description of the library (generally the github description works nicely) and where the library can be found on the web.
+Yep, that's it - because keymaster has no dependencies our recipe really only needs to include the location of where it can be found on the web.
+
+In general though, it's good practice to include some extra information about the library that will be displayed in the BakeJS front-end (eventually).  At a minimum I like to include the description of the library (generally the github description works nicely) and where the library can be found on the web.
 
 With that additional information, the recipe looks like this::
 

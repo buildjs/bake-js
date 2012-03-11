@@ -7,4 +7,4 @@ program
     .option('-o, --out [outputFile]', 'Target output file')
     .parse(process.argv);
     
-require('../lib/compose')(program.args, program);
+require('../lib/bake')(program.args, program);

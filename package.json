@@ -1,13 +1,13 @@
 {
-  "name": "compose-js",
+  "name": "bake-js",
   "description": "Composing Small Javascript Libraries, Homebrew Style",
   "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
   "tags": [ "build" ],
   "version": "0.0.1",
-  "main": "lib/compose.js",
+  "main": "lib/bake.js",
   
   "bin": {
-    "compose": "./bin/compose"
+    "bake": "./bin/bake"
   },
   
   "global": "true",

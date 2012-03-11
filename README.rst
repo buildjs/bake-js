@@ -7,7 +7,7 @@ BakeJS is a project designed to ease the pain and complexity of creating client-
 Installation
 ============
 
-To get started with BakeJS first install the command line tools via npm.  If you don't already have `NodeJS <http://nodejs.org/>`_installed then you will need to install it to get access to npm.::
+To get started with BakeJS first install the command line tools via npm.  If you don't already have `NodeJS <http://nodejs.org/>`_ installed then you will need to install it to get access to npm.::
 
     npm install -g bake-js
     
@@ -31,7 +31,7 @@ Baking your Application
 
 Using BakeJS to generate an application file that is packaged with your application dependencies all into a single file is very simple.
 
-The following is an example of how you might create an application that has dependencies on both `backbone <https://github.com/documentcloud/backbone>`_ and `eve <https://github.com/DmitryBaranovskiy/eve>`_::
+The following is an example of how you might create an application that has dependencies on both `backbone <https://github.com/documentcloud/backbone>`_ and `eve <https://github.com/DmitryBaranovskiy/eve>`_:
 
 .. highlight:: javascript
 

@@ -2,7 +2,7 @@
 bake-js
 =======
 
-BakeJS is a project designed to ease the pain and complexity of creating client-side Javascript applications. It takes a similar approach to `homebrew </mxcl/homebrew>`_  in that it uses a github repository to define a number of recipes for building various JS libraries.
+BakeJS is a project designed to ease the pain and complexity of creating client-side Javascript applications. It takes a similar approach to `homebrew <https://github.com/mxcl/homebrew>`_  in that it uses a github repository to define a number of recipes for building various JS libraries.
 
 Installation
 ============
@@ -33,7 +33,7 @@ Using BakeJS to generate an application file that is packaged with your applicat
 
 The following is an example of how you might create an application that has dependencies on both `backbone <https://github.com/documentcloud/backbone>`_ and `eve <https://github.com/DmitryBaranovskiy/eve>`_::
 
-_highlight: javascript
+.. highlight:: javascript
 
     // dep: backbone, eve
 

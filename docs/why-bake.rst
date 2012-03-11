@@ -17,6 +17,6 @@ I absolutely tip my hat to `Dustin Diaz <https://github.com/ded>`_ for `Ender <h
 
 Don't get me wrong, I love NPM, and I've written more than a couple node modules.  I just don't think it's the right place for client-side libraries.
 
-A great case in point for me is a library that I do a lot with: `eve https://github.com/DmitryBaranovskiy/eve`_.  At this current point in time the npm deployed version of eve was not put there by `Dmitry Baranovskiy <http://twitter.com/DmitryBaranovsk>`_ and as such it cannot be maintained by Dmitry.
+A great case in point for me is a library that I do a lot with: `eve <https://github.com/DmitryBaranovskiy/eve>`_.  At this current point in time the npm deployed version of eve was not put there by `Dmitry Baranovskiy <http://twitter.com/DmitryBaranovsk>`_ and as such it cannot be maintained by Dmitry.
 
 While I'm not going into the ins and outs of it here, its a problem, and working around the problem creates more clutter in NPM and confusion for all of us.

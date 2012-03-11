@@ -82,6 +82,6 @@ Everything being well, you should have seen your small example file combined wit
 Submitting your Recipe
 ======================
 
-Once you have created your recipe and know that it works, then simply `submit a pull request <https://github.com/DamonOehlman/bake-js/pull/new/master>` for your new recipe.
+Once you have created your recipe and know that it works, then simply `submit a pull request <https://github.com/DamonOehlman/bake-js/pull/new/master>`_ for your new recipe.
 
 In general, the new recipe will be accepted straight in and available for everybody next time they run a ``bake update``.

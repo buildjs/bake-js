@@ -56,4 +56,4 @@ More Information
 
 For more information on BakeJS, check out the documentation at:
 
-`http://bakejs.readthedocs.org/`_
+http://bakejs.readthedocs.org/

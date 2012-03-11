@@ -33,7 +33,7 @@ Using BakeJS to generate an application file that is packaged with your applicat
 
 The following is an example of how you might create an application that has dependencies on both `backbone <https://github.com/documentcloud/backbone>`_ and `eve <https://github.com/DmitryBaranovskiy/eve>`_:
 
-.. highlight:: javascript
+.. code-block:: javascript
 
     // dep: backbone, eve
 
@@ -45,7 +45,7 @@ Then run ``bake`` against your target file::
 
     bake examples/test.js
 
-When run the dependencies are analysed, child dependencies resolved (e.g. underscore is specified as a dependency in the `backbone recipe </DamonOehlman/bake-js/blob/master/library/recipes/backbone>`_ and then all required files are pulled down from their remote sources and pushed to the start of the resulting output.
+When run the dependencies are analysed, child dependencies resolved (e.g. underscore is specified as a dependency in the `backbone recipe <https://github.com/DamonOehlman/bake-js/blob/master/library/recipes/backbone>`_ and then all required files are pulled down from their remote sources and pushed to the start of the resulting output.
 
 By default, bake writes output to ``STDOUT`` but in most cases you will want to redirect this output to a file, e.g.::
 

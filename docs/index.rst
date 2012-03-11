@@ -1,14 +1,13 @@
-Your Project
-============
+.. include:: ../README.rst
 
-Some words about your project.   Maybe even include your README file here.
-
-Contents:
+More Information
+================
 
 .. toctree::
    :maxdepth: 2
-
-
+   
+   writing-recipes
+   build-vs-bake
 
 Indices and tables
 ==================

@@ -1,4 +1,4 @@
-# dsc: Standardized Mouse and Touch Event Handling using Eve
+# dsc: Access Touch and Mouse Events in a standard way
 # tag: touch, mobile
 # src: https://github.com/DamonOehlman/interact
 # bug: https://github.com/DamonOehlman/interact/issues

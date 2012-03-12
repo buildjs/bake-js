@@ -1,0 +1,6 @@
+# dsc: Barebones Single Page Apps Unframework (experimental)
+# url: https://github.com/DamonOehlman/flip
+# bug: https://github.com/DamonOehlman/flip/issues
+# dep: eve, classtweak, when
+
+github://DamonOehlman/flip/dist/flip.js

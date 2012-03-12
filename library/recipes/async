@@ -1,0 +1,5 @@
+# dsc: Async utilities for node and the browser
+# url: https://github.com/caolan/async
+# bug: https://github.com/caolan/async/issues
+
+github://caolan/async/lib/async.js

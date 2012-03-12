@@ -27,6 +27,8 @@ The first thing you are going to want to do if you are interested in creating yo
 
 If you are handwriting a recipe, then the first thing to do is to create a file in the ``library/recipes`` folder in your forked repository.  The name of your file should be simply the name of the library you are creating a recipe for (with no file extension).
 
+*I would definitely recommend looking at :ref:`scaffolding-recipes` instead though.*
+
 For instance, let's say I want to create a recipe for `Thomas Fuchs <https://twitter.com/#!/thomasfuchs>`_ `keymaster <https://github.com/madrobby/keymaster>`_ library.  I'd start by taking a look at the github page for the repo and I'd glean some info from there to start my recipe file.
 
 The first thing I would do is work out the location of the actual JS file that will be used in the recipe.  My preference is to find a non-minified JS file.  In the case of keymaster the file is located at:

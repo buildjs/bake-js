@@ -4,6 +4,7 @@
    :maxdepth: 2
    
    writing-recipes
+   scaffolding-recipes
    build-vs-bake
    why-bake
    roadmap

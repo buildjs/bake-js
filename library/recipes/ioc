@@ -1,6 +1,0 @@
-# dsc: Experimental Inversion of Control JS Implementation
-# url: https://github.com/DamonOehlman/IoC
-# bug: https://github.com/DamonOehlman/IoC/issues
-# dep: eve, matchme, underscore
-
-github://DamonOehlman/IoC/ioc.js

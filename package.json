@@ -3,7 +3,7 @@
   "description": "Composing Small Javascript Libraries, Homebrew Style",
   "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
   "tags": [ "build" ],
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "lib/bake.js",
   
   "bin": {

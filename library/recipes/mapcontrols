@@ -4,4 +4,4 @@
 # bug: https://github.com/sidelab/mapcontrols/issues
 # req: eve, classtweak, interact
 
-github://sidelab/mapcontrols/mapcontrols.js
+github://sidelab/mapcontrols/dist/mapcontrols.js

@@ -2,5 +2,6 @@
 # url: http://www.decarta.com
 # src: https://github.com/sidelab/leaflet-decarta
 # bug: https://github.com/sidelab/leaflet-decarta/issues
+# req: leaflet
 
 github://sidelab/leaflet-decarta/dist/Leaflet.deCarta.min.js

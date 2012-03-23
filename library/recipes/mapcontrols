@@ -2,6 +2,6 @@
 # author: sidelab
 # src: https://github.com/sidelab/mapcontrols
 # bug: https://github.com/sidelab/mapcontrols/issues
-# req: eve, classtweak, interact
+# req: alignit, eve, classtweak, interact
 
 github://sidelab/mapcontrols/dist/mapcontrols.js

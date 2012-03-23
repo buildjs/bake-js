@@ -1,0 +1,7 @@
+# dsc: A modern JSON implementation compatible with nearly all JavaScript platforms.
+# author: Kit Cambridge <http://kitcambridge.github.com>
+# url: http://bestiejs.github.com/json3
+# src: https://github.com/bestiejs/json3
+# bug: https://github.com/bestiejs/json3/issues
+
+github://bestiejs/json3/lib/json3.js

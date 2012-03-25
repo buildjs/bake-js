@@ -4,4 +4,4 @@
 # src: https://github.com/fgnass/spin.js
 # bug: https://github.com/fgnass/spin.js/issues
 
-github://fgnass/spin.js/spin.js
+https://raw.github.com/fgnass/spin.js/gh-pages/spin.js

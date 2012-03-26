@@ -1,0 +1,7 @@
+# dsc: Framework-agnostic, micro-library for getting stack traces in all web browsers
+# author: eriwen
+# url: http://stacktracejs.com/
+# src: https://github.com/eriwen/javascript-stacktrace
+# bug: https://github.com/eriwen/javascript-stacktrace/issues
+
+github://eriwen/javascript-stacktrace/javascript-stacktrace.js

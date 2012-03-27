@@ -1,0 +1,7 @@
+# dsc: Moment.js is a lightweight javascript date library for parsing, manipulating, and formatting dates.
+# author: timrwood
+# url: momentjs.com
+# src: https://github.com/timrwood/moment
+# bug: https://github.com/timrwood/moment/issues
+
+github://timrwood/moment/moment.js

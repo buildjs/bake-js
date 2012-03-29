@@ -4,4 +4,4 @@
 # bug: https://github.com/DamonOehlman/registry/issues
 # req: matchme, wildcard
 
-github://DamonOehlman/registry/registry.js
+github://DamonOehlman/registry/pkg/raw/registry.js

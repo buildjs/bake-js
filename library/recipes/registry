@@ -2,6 +2,5 @@
 # author: DamonOehlman
 # src: https://github.com/DamonOehlman/registry
 # bug: https://github.com/DamonOehlman/registry/issues
-# req: matchme, wildcard
 
 github://DamonOehlman/registry/pkg/raw/registry.js

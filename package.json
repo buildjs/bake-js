@@ -3,7 +3,7 @@
   "description": "Composing Small Javascript Libraries, Homebrew Style",
   "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
   "tags": [ "build" ],
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "lib/bake.js",
   
   "bin": {
@@ -35,10 +35,10 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/DamonOehlman/compose-js.git"
+    "url": "git://github.com/DamonOehlman/bake-js.git"
   },
   "bugs": {
-    "url": "http://github.com/DamonOehlman/compose-js/issues"
+    "url": "http://github.com/DamonOehlman/bake-js/issues"
   },
   
   "contributors": []

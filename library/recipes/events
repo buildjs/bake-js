@@ -3,8 +3,4 @@
 # src: https://github.com/DamonOehlman/events-amd
 # bug: https://github.com/DamonOehlman/events-amd/issues
 
-[raw]
 github://DamonOehlman/events-amd/pkg/raw/events.js
-
-[amd]
-github://DamonOehlman/events-amd/pkg/amd/events.js

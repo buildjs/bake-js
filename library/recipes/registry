@@ -3,4 +3,4 @@
 # src: https://github.com/DamonOehlman/registry
 # bug: https://github.com/DamonOehlman/registry/issues
 
-github://DamonOehlman/registry/pkg/raw/registry.js
+github://DamonOehlman/registry/pkg/oldschool/registry.js

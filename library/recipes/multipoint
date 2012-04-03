@@ -1,0 +1,6 @@
+# dsc: Multipoint Translation and Operations Library
+# author: DamonOehlman
+# src: https://github.com/DamonOehlman/multipoint
+# bug: https://github.com/DamonOehlman/multipoint/issues
+
+github://DamonOehlman/multipoint/pkg/oldschool/multipoint.js

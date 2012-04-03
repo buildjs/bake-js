@@ -1,8 +1,0 @@
-# dsc: Give your JS App some Backbone with Models, Views, Collections, and Events
-# tag: mvc
-# url: http://backbonejs.org
-# src: https://github.com/documentcloud/backbone
-# bug: https://github.com/documentcloud/backbone/issues
-# req: underscore
-
-github://documentcloud/backbone/backbone.js

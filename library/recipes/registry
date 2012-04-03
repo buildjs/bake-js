@@ -1,6 +1,0 @@
-# dsc: JS IoC implementation #experimental
-# author: DamonOehlman
-# src: https://github.com/DamonOehlman/registry
-# bug: https://github.com/DamonOehlman/registry/issues
-
-github://DamonOehlman/registry/pkg/oldschool/registry.js

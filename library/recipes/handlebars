@@ -1,6 +1,0 @@
-# dsc: Mustache like templating
-# url: https://github.com/wycats/handlebars.js
-# bug: https://github.com/wycats/handlebars.js/issues
-# note: using cdnjs as the github page does not seem to include a compiled JS file anywhere :/
-
-http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0.beta2/handlebars.min.js

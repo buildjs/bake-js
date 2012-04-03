@@ -4,6 +4,8 @@ bake-js
 
 BakeJS is a project designed to ease the pain and complexity of creating client-side Javascript applications. It takes a similar approach to `homebrew <https://github.com/mxcl/homebrew>`_  in that it uses a github repository to define a number of recipes for building various JS libraries.
 
+**NOTE:** BakeJS is very much in experimental stages now, and while I am using it for my own internal application builds I would not recommend others to do so just yet.  Things are changing quite a bit at this stage...
+
 Installation
 ============
 

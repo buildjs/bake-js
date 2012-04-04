@@ -22,11 +22,11 @@ Once BakeJS is installed, you will then be able to access the ``bake`` command. 
 
 If everything has gone to plan, you should see the following output::
 
-    retrieving recipes from remote server...
+    retrieving recipes from https://github.com/DamonOehlman/bakery/tarball/master
     extracting recipes
     ✓ done
 
-The ``update`` command here performs the same task as ``brew update``, except that bake downloads the latest ``.tar.gz`` of this repo from github rather than interfacing with git.  General intention is that while the process will be less optimal with regards to bandwidth it is something that should work natively in Windows.
+The ``update`` command here performs the same task as ``brew update``, except that bake downloads the latest ``.tar.gz`` of a bakery repo from github rather than interfacing with git.  General intention is that while the process will be less optimal with regards to bandwidth it is something that should work natively in Windows.
 
 Baking your Application
 =======================
@@ -49,9 +49,7 @@ Then run ``bake`` against your target file::
 
 When run the dependencies are analysed, child dependencies resolved (e.g. underscore is specified as a dependency in the `backbone recipe <https://github.com/DamonOehlman/bake-js/blob/master/library/recipes/backbone>`_ and then all required files are pulled down from their remote sources and pushed to the start of the resulting output.
 
-By default, bake writes output to ``STDOUT`` but in most cases you will want to redirect this output to a file, e.g.::
-
-    bake src/yourapp.js > dist/yourapp.js
+The resulting file is then output to a `dist` folder (by default).
 
 More Information
 ================

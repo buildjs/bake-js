@@ -14,7 +14,8 @@ Recipes are simply plain text files that are stored in the `library/recipes <htt
     # bug: https://github.com/documentcloud/backbone/issues
     # req: underscore
 
-    github://documentcloud/backbone/backbone.js
+    [core]
+    js <= github://documentcloud/backbone/backbone.js
 
 The structure of the file is pretty simple.  Lines starting with the hash character are used to describe attributes of the recipe, of which the most important one to take note of is the `req` attribute.  This attribute is used to specify other recipes that are require to make this library work correctly.  For multiple dependencies use a comma delimited list.
 
@@ -23,7 +24,7 @@ After the attribute definition section comes one or more `getit <https://github.
 It starts with a fork
 =====================
 
-The first thing you are going to want to do if you are interested in creating your own recipes is fork the `bake-js repository <https://github.com/DamonOehlman/bake-js>`_.  This will give you your own space to play and create recipes.
+The first thing you are going to want to do if you are interested in creating your own recipes is fork the `bakery repository <https://github.com/DamonOehlman/bakery>`_.  This will give you your own space to play and create recipes.
 
 If you are handwriting a recipe, then the first thing to do is to create a file in the ``library/recipes`` folder in your forked repository.  The name of your file should be simply the name of the library you are creating a recipe for (with no file extension).
 
@@ -37,7 +38,8 @@ https://raw.github.com/madrobby/keymaster/master/keymaster.js
 
 But since BakeJS uses `getit <https://github.com/DamonOehlman/getit>`_ under the hood we can use the custom github url scheme implemented in getit (but feel free to use the standard http url as well if you prefer). So, first cut of our keymaster recipe looks like this::
 
-    github://madrobby/keymaster/keymaster.js
+    [core]
+    js <= github://madrobby/keymaster/keymaster.js
 
 Yep, that's it - because keymaster has no dependencies our recipe really only needs to include the location of where it can be found on the web.
 
@@ -48,7 +50,8 @@ With that additional information, the recipe looks like this::
     # dsc: A simple micro-library for defining and dispatching keyboard shortcuts.
     # url: https://github.com/madrobby/keymaster
 
-    github://madrobby/keymaster/keymaster.js
+    [core]
+    js <= github://madrobby/keymaster/keymaster.js
 
 Done.  I can now build apps that require keymaster by simply referencing keymaster in a ``dep`` comment.  e.g.:
 
@@ -62,26 +65,16 @@ Done.  I can now build apps that require keymaster by simply referencing keymast
 Testing the new Recipe
 ======================
 
-Before submitting a pull-request to include the recipe in the main repository, it's probably worth testing the recipe first.  If you try and run BakeJS in the normal way on your test file, you will see it fail::
+Before submitting a pull-request to include the recipe in the main repository, it's probably worth testing the recipe first. 
 
-    damo-mbair:bake-js damo$ ./bin/bake examples/keymaster.js 
-    reading: examples/keymaster.js
-    parsing file
-    Error: Unable to find "keymaster" recipe
+Assuming you are in the bakery directory, then you should be able to run the `check` command, to validate the recipe is correct::
+
+    damo-mbair:bake-js damo$ bake check keymaster
+    ✓ recipe ok
     
-This is because your recipe exists in the library folder of the repo and not in the local copy of the remote recipes.  To rectify this situation, simply run BakeJS with the ``--local`` flag to tell it you'd like to use your local library instead::
-
-    damo-mbair:bake-js damo$ ./bin/bake --local examples/keymaster.js
-    reading: examples/keymaster.js
-    parsing file
-    <= keymaster:   github://madrobby/keymaster/keymaster.js
-    ✓ done
-
-Everything being well, you should have seen your small example file combined with the dependency printed to STDOUT.  Looks like your recipe works and is ready to be submitted.
-
 Submitting your Recipe
 ======================
 
-Once you have created your recipe and know that it works, then simply `submit a pull request <https://github.com/DamonOehlman/bake-js/pull/new/master>`_ for your new recipe.
+Once you have created your recipe and know that it works, then simply `submit a pull request <https://github.com/DamonOehlman/bakery/pull/new/master>`_ for your new recipe.
 
 In general, the new recipe will be accepted straight in and available for everybody next time they run a ``bake update``.

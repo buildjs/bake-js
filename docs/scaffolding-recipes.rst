@@ -20,7 +20,8 @@ Which generated the following recipe (placed in the ``library/recipes/nimble`` f
     # src: https://github.com/caolan/nimble
     # bug: https://github.com/caolan/nimble/issues
 
-    github://caolan/nimble/nimble.js
+    [core]
+    js <= github://caolan/nimble/nimble.js
 
 The information generated here is gleaned from the `github api <https://develop.github.com>`_ and together with a bit of convention over configuration magic.  
 

@@ -21,6 +21,7 @@
     "commander": "0.5.x",
     "debug": "*",
     "fstream": "0.1.x",
+    "formatter": "0.0.x",
     "getit": "*",
     "mkdirp": "*",
     "out": "*",

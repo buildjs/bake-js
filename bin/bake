@@ -6,6 +6,7 @@ program
     .option('-w, --watch', 'Watch for changes')
     .option('-o, --output [targetPath]', 'Target output path (default: ./dist)')
     .option('--bakery [pathToBakery]', 'Path to local bakery files')
+    .option('--refresh', 'Ignore local files and check servers for updates')
     .option('--quiet', 'Suppress output')
     .parse(process.argv);
     

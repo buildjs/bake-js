@@ -24,7 +24,7 @@
     "formatter": "0.0.x",
     "getit": "*",
     "mkdirp": "*",
-    "out": "*",
+    "out": "0.4.1",
     "request": "2.9.x",
     "tar": "0.1.x",
     "when": "https://github.com/cujojs/when/tarball/master",

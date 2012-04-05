@@ -6,6 +6,7 @@ program
     .option('-w, --watch', 'Watch for changes')
     .option('-o, --output [targetPath]', 'Target output path (default: ./dist)')
     .option('--bakery [pathToBakery]', 'Path to local bakery files')
+    .option('--buildstyle [oldschool|amd]', 'Specify the current build style (default: oldschool = concatenated output)')
     .option('--refresh', 'Ignore local files and check servers for updates')
     .parse(process.argv);
     

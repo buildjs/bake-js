@@ -5,7 +5,7 @@
   "tags": [
     "build"
   ],
-  "version": "0.1.11",
+  "version": "0.1.12",
   "main": "lib/bake.js",
   "bin": {
     "bake": "./bin/bake"

@@ -47,7 +47,7 @@ Then run ``bake`` against your target file::
 
     bake examples/test.js
 
-When run the dependencies are analysed, child dependencies resolved (e.g. underscore is specified as a dependency in the `backbone recipe <https://github.com/DamonOehlman/bake-js/blob/master/library/recipes/backbone>`_ and then all required files are pulled down from their remote sources and pushed to the start of the resulting output.
+When run the dependencies are analysed, child dependencies resolved (e.g. underscore is specified as a dependency in the `backbone recipe <https://github.com/DamonOehlman/bakery/blob/master/recipes/backbone>`_ and then all required files are pulled down from their remote sources and pushed to the start of the resulting output.
 
 The resulting file is then output to a `dist` folder (by default).
 

@@ -1,0 +1,8 @@
+# dsc: Mapping API independent helper map controls
+# author: sidelab
+# src: https://github.com/sidelab/mapcontrols
+# bug: https://github.com/sidelab/mapcontrols/issues
+# req: alignit, eve, classtweak, interact
+
+[core]
+js <= github://sidelab/mapcontrols/dist/mapcontrols.js

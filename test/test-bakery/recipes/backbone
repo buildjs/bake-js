@@ -1,0 +1,12 @@
+# dsc: Give your JS App some Backbone with Models, Views, Collections, and Events
+# tag: mvc
+# url: http://backbonejs.org
+# src: https://github.com/documentcloud/backbone
+# bug: https://github.com/documentcloud/backbone/issues
+# req: underscore
+
+[core]
+js <= github://documentcloud/backbone/backbone.js
+
+[localstorage]
+js <= github://documentcloud/backbone/examples/backbone-localstorage.js

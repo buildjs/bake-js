@@ -1,0 +1,7 @@
+# dsc: Node.js StreamLike interface for browser use
+# author: DamonOehlman
+# src: https://github.com/DamonOehlman/streamlike
+# bug: https://github.com/DamonOehlman/streamlike/issues
+
+[core]
+js <= github://DamonOehlman/streamlike/pkg/{{ buildstyle }}/streamlike.js

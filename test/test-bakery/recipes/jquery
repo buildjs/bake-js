@@ -1,0 +1,8 @@
+# dsc: jQuery
+# url: http://jquery.com/
+# src: https://github.com/jquery/jquery
+# bug: https://github.com/jquery/jquery/issues
+# stable: 1.7.2
+
+[core]
+js <= http://ajax.googleapis.com/ajax/libs/jquery/{{ version }}/jquery.js

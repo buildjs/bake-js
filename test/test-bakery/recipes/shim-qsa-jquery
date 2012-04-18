@@ -1,0 +1,6 @@
+# dsc: A simple querySelector shim that uses an available jQuery instance
+# url: https://github.com/DamonOehlman/snippets
+# bug: https://github.com/DamonOehlman/snippets/issues
+
+[core]
+js <= github://DamonOehlman/snippets/shim-qsa-jquery.js

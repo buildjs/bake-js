@@ -1,0 +1,8 @@
+# dsc: A really tiny functional JavaScript and async flow-control library
+# author: caolan
+# url: http://caolan.github.com/nimble
+# src: https://github.com/caolan/nimble
+# bug: https://github.com/caolan/nimble/issues
+
+[core]
+js <= github://caolan/nimble/nimble.js

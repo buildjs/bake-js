@@ -1,0 +1,7 @@
+# dsc: Dirt Simple Wildcard Matching (for Strings, Arrays and Objects)
+# author: DamonOehlman
+# src: https://github.com/DamonOehlman/wildcard
+# bug: https://github.com/DamonOehlman/wildcard/issues
+
+[core]
+js <= github://DamonOehlman/wildcard/pkg/{{ buildstyle }}/wildcard.js

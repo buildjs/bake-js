@@ -1,0 +1,8 @@
+# dsc: Ajax with less suck - (and node.js HTTP client with less suck)
+# author: visionmedia
+# url: http://visionmedia.github.com/superagent/
+# src: https://github.com/visionmedia/superagent
+# bug: https://github.com/visionmedia/superagent/issues
+
+[core]
+js <= github://visionmedia/superagent/superagent.js

@@ -1,0 +1,8 @@
+# dsc: a compact, blazing fast CSS selector engine
+# author: ded
+# url: http://dustindiaz.com/qwery
+# src: https://github.com/ded/qwery
+# bug: https://github.com/ded/qwery/issues
+
+[core]
+js <= github://ded/qwery/qwery.js

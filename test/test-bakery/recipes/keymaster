@@ -1,0 +1,5 @@
+# dsc: A simple micro-library for defining and dispatching keyboard shortcuts.
+# url: https://github.com/madrobby/keymaster
+
+[core]
+js <= github://madrobby/keymaster/keymaster.js

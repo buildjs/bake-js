@@ -1,0 +1,9 @@
+# dsc: Scientific and statistical computing in JavaScript
+# url: https://github.com/jasondavies/science.js
+# bug: https://github.com/jasondavies/science.js/issues
+
+[core]
+js <= github://jasondavies/science.js/science.js
+
+[stats]
+js <= github://jasondavies/science.js/science.stats.js

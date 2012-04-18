@@ -1,0 +1,6 @@
+# dsc: Simple Javascript Object Property Matching
+# src: https://github.com/DamonOehlman/matchme
+# bug: https://github.com/DamonOehlman/matchme/issues
+
+[core]
+js <= github://DamonOehlman/matchme/pkg/{{ buildstyle }}/matchme.js

@@ -1,0 +1,6 @@
+# dsc: Duration parsing functions for Javascript
+# url: https://github.com/DamonOehlman/timelord
+# bug: https://github.com/DamonOehlman/timelord/issues
+
+[core]
+js <= github://DamonOehlman/timelord/timelord.js

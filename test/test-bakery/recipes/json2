@@ -1,0 +1,8 @@
+# dsc: JSON in JavaScript
+# author: douglascrockford
+# url: http://www.JSON.org/
+# src: https://github.com/douglascrockford/JSON-js
+# bug: https://github.com/douglascrockford/JSON-js/issues
+
+[core]
+js <= github://douglascrockford/JSON-js/json2.js

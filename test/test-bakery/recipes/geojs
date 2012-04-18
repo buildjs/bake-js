@@ -1,0 +1,6 @@
+# dsc: Simple Geospatial Types and Tools for Javascript
+# url: https://github.com/sidelab/geojs
+# bug: https://github.com/sidelab/geojs/issues
+
+[core]
+js <= github://sidelab/geojs/geojs.js

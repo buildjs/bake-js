@@ -1,0 +1,7 @@
+# dsc: AMD compatible version of the Node.js events module
+# author: joyent (AMD port helped along by DamonOehlman)
+# src: https://github.com/DamonOehlman/events-amd
+# bug: https://github.com/DamonOehlman/events-amd/issues
+
+[core]
+js <= github://DamonOehlman/events-amd/pkg/{{ buildstyle }}/events.js

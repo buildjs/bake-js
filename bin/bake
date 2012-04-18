@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-var program = require('commander');
+var program = require('commander'),
+    bake = require('../lib/bake');
 
 program
     .usage('[options] <targetFile> OR <action>')
@@ -8,6 +9,7 @@ program
     .option('--bakery [pathToBakery]', 'Path to local bakery files')
     .option('--buildstyle [oldschool|amd]', 'Specify the current build style (default: oldschool = concatenated output)')
     .option('--refresh', 'Ignore local files and check servers for updates')
+    .on('--help', bake.help)
     .parse(process.argv);
     
-require('../lib/bake')(program.args, program);
+bake(program.args, program);

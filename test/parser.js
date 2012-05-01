@@ -48,4 +48,63 @@ describe('parser tests', function() {
             done();
         });
     });
+    
+    it('should be able to extract additional modules (single mod, single comment)', function(done) {
+        load('mods-single.js', function(err, oven) {
+            expect(oven.resolved.mapcontrols).to.be.ok();
+            expect(oven.resolved.mapcontrols.name).to.equal('mapcontrols');
+            expect(oven.resolved.mapcontrols.mods).to.contain('core');
+            expect(oven.resolved.mapcontrols.mods).to.contain('zoom');
+
+            done();
+        });
+    });
+
+    it('should be able to extract additional modules (multiple mods, single comment, comma separated)', function(done) {
+        load('mods-multiple-comma.js', function(err, oven) {
+            expect(oven.resolved.mapcontrols).to.be.ok();            
+            expect(oven.resolved.mapcontrols.name).to.equal('mapcontrols');
+            expect(oven.resolved.mapcontrols.mods).to.contain('core');
+            expect(oven.resolved.mapcontrols.mods).to.contain('zoom');
+            expect(oven.resolved.mapcontrols.mods).to.contain('scale');
+
+            done();
+        });
+    });
+    
+    it('should be able to extract additional modules (multiple mods, single comment, space separated)', function(done) {
+        load('mods-multiple-space.js', function(err, oven) {
+            expect(oven.resolved.mapcontrols).to.be.ok();            
+            expect(oven.resolved.mapcontrols.name).to.equal('mapcontrols');
+            expect(oven.resolved.mapcontrols.mods).to.contain('core');
+            expect(oven.resolved.mapcontrols.mods).to.contain('zoom');
+            expect(oven.resolved.mapcontrols.mods).to.contain('scale');
+
+            done();
+        });
+    });
+    
+    it('should be able to extract additional modules (multiple mods, single comment, commaspace separated)', function(done) {
+        load('mods-multiple-commaspace.js', function(err, oven) {
+            expect(oven.resolved.mapcontrols).to.be.ok();            
+            expect(oven.resolved.mapcontrols.name).to.equal('mapcontrols');
+            expect(oven.resolved.mapcontrols.mods).to.contain('core');
+            expect(oven.resolved.mapcontrols.mods).to.contain('zoom');
+            expect(oven.resolved.mapcontrols.mods).to.contain('scale');
+
+            done();
+        });
+    });
+    
+    it('should be able to extract additional modules (multiple mods, multiple comments)', function(done) {
+        load('mods-separated.js', function(err, oven) {
+            expect(oven.resolved.mapcontrols).to.be.ok();            
+            expect(oven.resolved.mapcontrols.name).to.equal('mapcontrols');
+            expect(oven.resolved.mapcontrols.mods).to.contain('core');
+            expect(oven.resolved.mapcontrols.mods).to.contain('zoom');
+            expect(oven.resolved.mapcontrols.mods).to.contain('scale');
+
+            done();
+        });
+    });
 });

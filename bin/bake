@@ -7,7 +7,7 @@ program
     .option('-w, --watch', 'Watch for changes')
     .option('-o, --output [targetPath]', 'Target output path (default: ./dist)')
     .option('--bakery [pathToBakery]', 'Path to local bakery files')
-    .option('--buildstyle [oldschool|amd]', 'Specify the current build style (default: oldschool = concatenated output)')
+    .option('--buildstyle [oldschool|amd|none]', 'Specify the current build style (default: oldschool = concatenated output)')
     .option('--refresh', 'Ignore local files and check servers for updates')
     .on('--help', bake.help)
     .parse(process.argv);

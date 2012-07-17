@@ -35,10 +35,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/DamonOehlman/bake-js.git"
+    "url": "git://github.com/buildjs/bake-js.git"
   },
   "bugs": {
-    "url": "http://github.com/DamonOehlman/bake-js/issues"
+    "url": "http://github.com/buildjs/bake-js/issues"
   },
   "contributors": [],
   "optionalDependencies": {}

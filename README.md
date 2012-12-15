@@ -6,7 +6,7 @@ It's core reason for existence is to help with managing the dependencies web app
 
 ## Comparison to Other Build Tools
 
-Bake is quite different to other build tools, and in general works very well in partnership with these tools.  It is fairly common for us at [Sidelab](http://www.sidelab.com/) to be combine something like [grunt](https://github.com/cowboy/grunt) with bake (using a `Makefile` or similar) to create a streamlined process for building an application.
+Bake is quite different to other build tools, and in general works very well in partnership with these tools.  It is fairly common for us at [Sidelab](http://www.sidelab.com/) to combine something like [grunt](https://github.com/cowboy/grunt) with bake (using a `Makefile` or similar) to create a streamlined process for building an application.
 
 With regards to build tools that actually perform similar functionality, you should investigate [Ender](https://github.com/ender-js/Ender) to determine which tool is a better fit for your needs.  The essential difference is that Bake pulls in dependencies from directly from the web, whereas Ender uses [NPM](http://npmjs.org/) as it's source of modules.  Neither approach is more right than the other, but depending on your needs one will likely be a better fit.
 

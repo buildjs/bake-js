@@ -1,8 +1,8 @@
 {
   "name": "bake-js",
   "description": "Composing Small Javascript Libraries, Homebrew Style",
-  "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
-  "tags": [
+  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
+  "keywords": [
     "build"
   ],
   "version": "0.2.2",
@@ -10,25 +10,22 @@
   "bin": {
     "bake": "./bin/bake"
   },
-  "global": "true",
-  "engines": {
-    "node": ">= 0.6.x < 0.9.0"
-  },
+  "preferGlobal": true,
   "dependencies": {
-    "async": "0.1.x",
-    "commander": "0.5.x",
+    "async": "~0.2.9",
+    "commander": "~2.0.0",
     "debug": "*",
     "fstream": "0.1.x",
-    "formatter": "0.1.x",
-    "getit": "*",
-    "mkdirp": "*",
+    "formatter": "~0.4.1",
+    "getit": "~0.2.1",
+    "mkdirp": "~0.3.5",
     "out": "0.4.1",
-    "request": "2.9.x",
-    "rigger": "0.2.x",
-    "semver": "1.0.x",
+    "request": "~2.27.0",
+    "rigger": "~0.5.5",
+    "semver": "~2.1.0",
     "tar": "0.1.x",
-    "when": "1.3.x",
-    "underscore": "1.3.x"
+    "when": "~2.4.0",
+    "underscore": "~1.5.2"
   },
   "devDependencies": {
     "expect.js": "*"
@@ -40,6 +37,13 @@
   "bugs": {
     "url": "http://github.com/buildjs/bake-js/issues"
   },
-  "contributors": [],
-  "optionalDependencies": {}
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
 }

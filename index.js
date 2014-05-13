@@ -1,13 +1,37 @@
-var async = require('async'),
-    debug = require('debug')('bake'),
-    getit = require('getit'),
-    path = require('path'),
-    rigger = require('rigger'),
-    fs = require('fs'),
-    out = require('out'),
-    formatter = require('formatter'),
-    Oven = require('./oven'),
-    _ = require('underscore');
+var async = require('async');
+var debug = require('debug')('bake');
+var getit = require('getit');
+var path = require('path');
+var rigger = require('rigger');
+var fs = require('fs');
+var out = require('out');
+var formatter = require('formatter');
+var Oven = require('./oven');
+var _ = require('underscore');
+
+/**
+  # bake-js
+
+  Bake is a javascript __application__ build tool that is designed to make
+  building web apps as simple as possible.
+
+  It's core reason for existence is to help with managing the dependencies web
+  applications will require, and to make it simple for you to include libraries
+  without having to know where those libraries actually come from.
+
+  ## NOTE: Project Inactive
+
+  Development on this project has all but stopped, as
+  [the primary author](https://github.com/DamonOehlman) is a
+  [big fan of browserify](https://twitter.com/DamonOehlman/status/466146817608912896).
+
+  ## Documentation
+
+  Full documentation for bake is available at:
+
+  <http://bakejs.readthedocs.org/>
+
+**/
 
 function _help() {
   var commands = [],

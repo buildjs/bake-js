@@ -12,20 +12,20 @@
   },
   "preferGlobal": true,
   "dependencies": {
-    "async": "~0.2.9",
-    "commander": "~2.0.0",
+    "async": "~0.8",
+    "commander": "^2",
     "debug": "*",
-    "fstream": "0.1.x",
-    "formatter": "~0.4.1",
-    "getit": "~0.2.1",
-    "mkdirp": "~0.3.5",
-    "out": "0.4.1",
-    "request": "~2.27.0",
-    "rigger": "~0.5.5",
-    "semver": "~2.1.0",
-    "tar": "0.1.x",
-    "when": "~2.4.0",
-    "underscore": "~1.5.2"
+    "fstream": "~0.1",
+    "formatter": "~0.4",
+    "getit": "~0.4",
+    "mkdirp": "~0.5",
+    "out": "~0.5",
+    "request": "^2",
+    "rigger": "~0.5",
+    "semver": "^2",
+    "tar": "~0.1",
+    "when": "^3",
+    "underscore": "^1"
   },
   "devDependencies": {
     "expect.js": "*"

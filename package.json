@@ -6,7 +6,7 @@
     "build"
   ],
   "version": "0.3.1",
-  "main": "lib/bake.js",
+  "main": "index.js",
   "bin": {
     "bake": "./bin/bake"
   },

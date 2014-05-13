@@ -6,7 +6,7 @@ var rigger = require('rigger');
 var fs = require('fs');
 var out = require('out');
 var formatter = require('formatter');
-var Oven = require('./oven');
+var Oven = require('./lib/oven.js');
 var _ = require('underscore');
 
 /**

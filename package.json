@@ -44,7 +44,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "gendocs": "gendocs > README.md"
   },
   "license": "MIT"
 }

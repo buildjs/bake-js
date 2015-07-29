@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 var program = require('commander'),
-    bake = require('../lib/bake');
+    bake = require('../');
 
 program
     .usage('[options] <targetFile> OR <action>')

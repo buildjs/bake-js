@@ -74,7 +74,7 @@ function _process(files, opts, callback) {
   // load the required writer
   if (! opts.dummyRun) {
     try {
-      writer = require('./writers/' + opts.buildstyle);
+      writer = require('./lib/writers/' + opts.buildstyle);
     }
     catch (e) {
       callback(new Error('Unable to load the writer for buildstyle: ' + opts.buildstyle));

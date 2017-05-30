@@ -1,3 +1,4 @@
+
 # bake-js
 
 Bake is a javascript __application__ build tool that is designed to make
@@ -10,7 +11,7 @@ without having to know where those libraries actually come from.
 
 [![NPM](https://nodei.co/npm/bake-js.png)](https://nodei.co/npm/bake-js/)
 
-[![Build Status](https://img.shields.io/travis/buildjs/bake-js.svg?branch=master)](https://travis-ci.org/buildjs/bake-js)
+[![Build Status](https://api.travis-ci.org/buildjs/bake-js.svg?branch=master)](https://travis-ci.org/buildjs/bake-js) [![bitHound Score](https://www.bithound.io/github/buildjs/bake-js/badges/score.svg)](https://www.bithound.io/github/buildjs/bake-js) 
 
 ## NOTE: Project Inactive
 
@@ -28,7 +29,7 @@ Full documentation for bake is available at:
 
 ### MIT
 
-Copyright (c) 2014 Damon Oehlman <damon.oehlman@gmail.com>
+Copyright (c) 2017 Damon Oehlman <damon.oehlman@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
